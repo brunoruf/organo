@@ -1,0 +1,20 @@
+.dropdown-list {
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0;
+}
+
+.dropdown-list > label {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.dropdown-list > select {
+    margin-top: 6px;
+    height:  40px;
+    border-radius: 4px;
+    border: 1px solid #cfd7dd;
+    padding: 0 8px;
+    box-shadow: 2px 2px 8px rgba(182, 191, 199, .2);
+    background: #FFF;
+}

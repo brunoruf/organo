@@ -1,0 +1,71 @@
+.character-card-container {
+    background: rgb(0, 0, 0);
+    min-width: 260px;
+    max-width: 320px;
+    border-radius: 8px;
+    height: 320px;
+    position: relative;
+    background-size: cover;
+    background-position: center;
+    border: 4px solid blue;
+    box-sizing: border-box;
+}
+
+.character-strenght {
+    width: 52px;
+    height: 52px;
+    background: blue;
+    position: absolute;
+    top: 16px;
+    left: -10px;
+    color: #FFF;
+    line-height: 52px;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 28px;
+    z-index: 2;
+}
+
+.character-resistance {
+    width: 52px;
+    height: 52px;
+    background: red;
+    position: absolute;
+    top: 16px;
+    right: -10px;
+    color: #FFF;
+    line-height: 52px;
+    font-weight: 500;
+    font-style: italic;
+    font-size: 28px;
+    z-index: 2;
+}
+
+.character-name {
+    width: 100%;
+    position: absolute;
+    font-weight: 600;
+    margin-bottom: 16px;
+    color: #FFF;
+    z-index: 3;
+    text-align: center;
+    bottom: 80px;
+}
+
+.character-quote {
+    width: 100%;
+    position: absolute;
+    font-style: italic;
+    color: #FFF;
+    z-index: 3;
+    text-align: center;
+    bottom: 48px;
+}
+
+.character-container-dark {
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: .3;
+    z-index: -5;
+}
