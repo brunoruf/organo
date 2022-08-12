@@ -1,8 +1,8 @@
 import "./Banner.css"
 
-const Banner = () => {
+const Banner = ({children}) => {
     return (
-        <div className="banner-principal">dwadwa</div>
+        <div className="banner-principal">{children}</div>
     )
 };
 

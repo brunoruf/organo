@@ -6,7 +6,7 @@ import { useState } from "react"
 
 
 
-const Form = ({mainTitle, cardInfos, teamList}) => {
+const Form = ({mainTitle, cardInfos, teamList, closeModal}) => {
 
     const [time, setTime] = useState('')
     const [nome, setNome] = useState('')
@@ -31,12 +31,16 @@ const Form = ({mainTitle, cardInfos, teamList}) => {
         setForca('')
         setResistencia('')
         setImage('')
+        closeModal({closeModal})
     };
 
     return (
-        <section className="container">
+        <section className="container-form">
             <form className="form" onSubmit={onSave}>
-                <h2>{mainTitle}</h2>
+                <div>
+                    <h2>{mainTitle}</h2>
+                    <button onClick={closeModal} className="buttonx">X</button>
+                </div>
                 <DropDownList
                     label="Time"
                     placeholder="Selecione o time"
@@ -69,6 +73,7 @@ const Form = ({mainTitle, cardInfos, teamList}) => {
                     <TextField
                         label="Resistência"
                         placeholder="Digite seu nome"
+                        className="atributo"
                         valueChanged={setResistencia}
                         value={resistencia}
                     />
