@@ -14,7 +14,7 @@
 .character-strenght {
     width: 52px;
     height: 52px;
-    background: blue;
+    background-image: url(../../../public/strenght-badge.png);
     position: absolute;
     top: 16px;
     left: -10px;
