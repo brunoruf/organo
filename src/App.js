@@ -17,16 +17,19 @@ export const teams = [
     name: 'X-Men',
     primaryColor: '#222',
     secondaryColor: '#4b0908',
+    logo: 'xmen-logo'
   },
   {
     name: 'Avengers',
     primaryColor: '#626EDA',
     secondaryColor: '#924F9E',
+    logo: 'avengers-logo'
   },
   {
     name: 'SpiderMan',
     primaryColor: '#DF1F2D',
     secondaryColor: '#2B3784',
+    logo: 'spiderman-logo'
   }
 ]
 
@@ -42,15 +45,15 @@ function App() {
   return (
     <>
         {isModalVisible && <Form
-        mainTitle="Título do Form"
+        mainTitle="New Super Hero"
         cardInfos={objeto => createNewCharacter(objeto)}
         teamList={teams.map(team => team.name)}
         onClick={() => setIsModalVisible(false)}
         closeModal={() => setIsModalVisible(false)}
         />}
-      <Banner><button onClick={() => setIsModalVisible(true)}>NEW</button></Banner>
+      <Banner><button onClick={() => setIsModalVisible(true)}>NEW HERO</button></Banner>
       {teams.map(team => (<Team
-      teamName={team.name}
+      teamName={team.logo}
       key={team.name}
       background={team.primaryColor}
       characters={characters.filter(character => character.time === team.name)}/>))}

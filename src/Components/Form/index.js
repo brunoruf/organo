@@ -65,14 +65,14 @@ const Form = ({mainTitle, cardInfos, teamList, closeModal}) => {
                 <div className="atributos">
                     <TextField
                         label="Força"
-                        placeholder="Digite seu nome"
+                        placeholder="1 a 5"
                         className="atributo"
                         valueChanged={setForca}
                         value={forca}
                     />
                     <TextField
                         label="Resistência"
-                        placeholder="Digite seu nome"
+                        placeholder="1 a 5"
                         className="atributo"
                         valueChanged={setResistencia}
                         value={resistencia}
@@ -80,11 +80,11 @@ const Form = ({mainTitle, cardInfos, teamList, closeModal}) => {
                 </div>
                 <TextField
                     label="Imagem"
-                    placeholder="Digite seu nome"
+                    placeholder="URL da imagem"
                     valueChanged={setImage}
                     value={image}
                 />
-                <Button text="Cadastrar"/>
+                <Button text="Adicionar"/>
             </form>
         </section>
     )

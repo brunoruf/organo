@@ -1,18 +1,31 @@
 .banner-principal {
     background: cornflowerblue;
     width: 100%;
-    height: 300px;
+    height: 400px;
     display: flex;
     justify-content: center;
     align-items:flex-end;
     position: relative;
+    background: url(../../../public/superheroes-database.jpg) no-repeat left center;
+    background-size: cover;
 }
 
 .banner-principal button {
     position: absolute;
     bottom: -30px;
     border-radius: 1000px;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border: 0;
+    background-color: #ff3939;
+    color: #fff;
+    border: 3px solid #FFF;
+    font-size: 18px;
+    font-weight: 600;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.banner-principal button:hover {
+    background-color: #c22f2f;
 }

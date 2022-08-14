@@ -1,8 +1,13 @@
 .team-container {
     background: #42424c;
     text-align: center;
-    padding: 80px 60px 60px 60px;
+    padding: 60px 60px 60px 60px;
     border-bottom: 1px solid #5b6270;
+}
+
+.team-container > img {
+    width: auto;
+    height: 80px;
 }
 
 .team-container > h3 {
@@ -15,5 +20,6 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 36px;
+    gap: 56px;
+    margin-top: 20px;
 }
